@@ -1,0 +1,118 @@
+
+  <div class="p-4 bg-white border-round shadow-7 div__signUp overflow-auto">
+
+    <h2 class="text-center font-semibold text-4xl mt-0">Register</h2>
+
+    <form>
+
+      <div class="flex gap-3 flex-column">
+
+        <div class="flex flex-column gap-1">
+          <label htmlFor="nombre">Nombre completo</label>
+          <input placeholder="Escriba nombre completo" class="" pInputText id="nombre"/>
+        </div>
+
+        <div class="flex flex-column gap-1">
+
+          <label htmlFor="email">Email</label>
+          <input placeholder="Escriba email" class="" pInputText id="email" type="email"/>
+
+        </div>
+
+        <div class="flex flex-column gap-1">
+
+          <label htmlFor="username">Username</label>
+          <input placeholder="Crear username" class="" pInputText id="username" type="email"/>
+
+        </div>
+
+        <div class="flex flex-column md:flex-row gap-3">
+
+          <div class="flex flex-column gap-1">
+            <label htmlFor="contraseña">Contraseña</label>
+            <!-- <input placeholder="Crear contraseña" class="" pInputText id="username" type="email"/> -->
+          <p-password class="" placeholder="Escriba su contraseña" [toggleMask]="true"></p-password>
+          </div>
+
+          <div class="flex flex-column gap-1">
+            <label htmlFor="contraseña">Confirmar contraseña</label>
+            <!-- <input placeholder="Crear contraseña" class="" pInputText id="username" type="email"/> -->
+            <p-password class="" placeholder="Escriba su contraseña" [toggleMask]="true"></p-password>
+          </div>
+
+        </div>
+
+        <div class="flex justify-content-center">
+          <p-button label="Registrarse" [raised]="true" icon="pi pi-user-plus" iconPos="right"></p-button>
+        </div>
+
+      </div>
+
+    </form>
+
+    <p-divider align="center" class="mt-2">
+      <p class="text-600 m-0 text-base">¿Ya tienes una cuenta?</p>
+    </p-divider>
+
+    <div class="flex justify-content-center">
+      <p-button  label="Iniciar sesión" [link]="true" routerLink="/authentication/login"></p-button>
+    </div>
+
+  </div>
+
+
+
+<!-- <form class="p-7 sm:p-8 bg-white border-round shadow-7 ">
+
+
+  <div class="flex flex-column mt-4 gap-3">
+
+      <div class="flex flex-column gap-1">
+        <label htmlFor="nombre">Nombre completo</label>
+        <input placeholder="Escriba nombre completo" class="" pInputText id="nombre"/>
+      </div>
+
+    <div class="flex flex-column md:flex-row gap-3">
+
+      <div class="flex flex-column gap-1">
+
+        <label htmlFor="email">Email</label>
+        <input placeholder="Escriba email" class="" pInputText id="email" type="email"/>
+
+      </div>
+
+      <div class="flex flex-column gap-1">
+
+        <label htmlFor="username">Username</label>
+        <input placeholder="Crear username" class="" pInputText id="username" type="email"/>
+
+      </div>
+
+    </div>
+
+
+    <div class="flex flex-column md:flex-row gap-3">
+
+      <div class="flex flex-column gap-1">
+        <label htmlFor="contraseña">Contraseña</label>
+        <input placeholder="Crear username" class="" pInputText id="username" type="email"/>
+      </div>
+
+      <div class="flex flex-column gap-1">
+        <label htmlFor="contraseña">Confirmar contraseña</label>
+        <input placeholder="Crear username" class="" pInputText id="username" type="email"/>
+      </div>
+
+    </div>
+
+    <div class="flex justify-content-center">
+      <p-button label="Registrarse" [raised]="true" icon="pi pi-user-plus" iconPos="right"></p-button>
+    </div>
+
+
+
+  </div>
+
+
+
+</form> -->

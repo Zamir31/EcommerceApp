@@ -1,0 +1,13 @@
+
+@media (max-height: 568px) {
+  .div__signUp {
+    margin-top: 10vh;
+  }
+}
+
+
+@media (max-height: 480px) {
+  .div__signUp {
+    margin-top: 30vh;
+  }
+}

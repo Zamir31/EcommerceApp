@@ -1,0 +1,114 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "Hombres",
+      "subcategorias": [
+        {
+          "id": 101,
+          "nombre": "Camisetas"
+        },
+        {
+          "id": 102,
+          "nombre": "Pantalones"
+        },
+        {
+          "id": 103,
+          "nombre": "Chaquetas"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Mujeres",
+      "subcategorias": [
+        {
+          "id": 201,
+          "nombre": "Vestidos"
+        },
+        {
+          "id": 202,
+          "nombre": "Blusas y Tops"
+        },
+        {
+          "id": 203,
+          "nombre": "Faldas"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Niños",
+      "subcategorias": [
+        {
+          "id": 301,
+          "nombre": "Ropa para Bebés"
+        },
+        {
+          "id": 302,
+          "nombre": "Ropa para Niñas"
+        },
+        {
+          "id": 303,
+          "nombre": "Ropa para Niños"
+        }
+      ]
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Camiseta de algodón para hombre",
+      "precio": 20.99,
+      "subcategoria_id": "101"
+    },
+    {
+      "id": "2",
+      "nombre": "Pantalones chinos para hombre",
+      "precio": 34.99,
+      "subcategoria_id": "102"
+    },
+    {
+      "id": "3",
+      "nombre": "Chaqueta de cuero sintético para hombre",
+      "precio": 79.99,
+      "subcategoria_id": "103"
+    },
+    {
+      "id": "4",
+      "nombre": "Vestido floral para mujer",
+      "precio": 49.99,
+      "subcategoria_id": "201"
+    },
+    {
+      "id": "5",
+      "nombre": "Blusa de seda para mujer",
+      "precio": 29.99,
+      "subcategoria_id": "202"
+    },
+    {
+      "id": "6",
+      "nombre": "Falda plisada para mujer",
+      "precio": 39.99,
+      "subcategoria_id": "203"
+    },
+    {
+      "id": "7",
+      "nombre": "Conjunto de body y pantalón para bebé",
+      "precio": 15.99,
+      "subcategoria_id": "301"
+    },
+    {
+      "id": "8",
+      "nombre": "Vestido para niña con estampado de unicornio",
+      "precio": 24.99,
+      "subcategoria_id": "302"
+    },
+    {
+      "id": "9",
+      "nombre": "Conjunto de camiseta y pantalón corto para niño",
+      "precio": 19.99,
+      "subcategoria_id": "303"
+    }
+  ]
+}

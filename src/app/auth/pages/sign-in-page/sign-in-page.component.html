@@ -1,0 +1,48 @@
+
+<div class="p-4 bg-white border-round shadow-7">
+
+  <h2 class="font-semibold text-4xl text-center mt-0">Login</h2>
+
+  <form>
+
+    <div class="flex flex-column gap-3 mt-4">
+
+      <div class="flex flex-column gap-1">
+        <label htmlFor="username">Username</label>
+        <input class="" placeholder="Escriba username" pInputText id="username"/>
+      </div>
+
+      <div class="flex flex-column gap-1">
+        <label htmlFor="contraseña">Contraseña</label>
+        <!-- <input type="password" placeholder="Escriba password" [feedback]="false" pPassword id="contraseña"/> -->
+        <p-password class="" placeholder="Escriba su contraseña" [toggleMask]="true"></p-password>
+      </div>
+
+      <div class="flex flex-column align-items-center gap-3">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <p-button label="Login" [raised]="true" icon="pi pi-sign-in" iconPos="right"></p-button>
+      </div>
+
+    </div>
+
+
+  </form>
+
+  <p-divider align="center" class="mt-2">
+    <p class="text-600 m-0">¿No tienes una cuenta?</p>
+  </p-divider>
+
+  <div class="flex justify-content-center">
+    <p-button label="Crear cuenta" [link]="true" routerLink="/authentication/register"></p-button>
+  </div>
+
+</div>
+
+<!-- <form class=" flex flex-column p-5 sm:p-8 bg-white border-round shadow-7 ">
+
+
+
+
+
+
+</form> -->

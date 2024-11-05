@@ -1,0 +1,20 @@
+.div_routerOutlet {
+  @media (min-width: 1200px) {
+    flex: 0 0 auto;
+    width: 78%;
+  }
+}
+
+.div_routerOutlet {
+  @media (min-width: 1300px) {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+}
+
+.div_routerOutlet {
+  @media (min-width: 1300px) {
+    flex: 0 0 auto;
+    width: 81.5%;
+  }
+}

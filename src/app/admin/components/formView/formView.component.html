@@ -1,0 +1,10 @@
+<div >
+
+    <h3 class="text-3xl md:text-5xl m-0 font-normal"> {{ title | capitalizeWords }} </h3>
+
+    <p-divider></p-divider>
+
+    <app-main-form (formSubmitted)="postFormToService($event)"></app-main-form>
+    <p-toast></p-toast>
+
+</div>

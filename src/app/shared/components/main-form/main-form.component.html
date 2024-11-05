@@ -1,0 +1,47 @@
+<form [formGroup]="mainForm" class="pt-3" autocomplete="off" (ngSubmit)="onSubmit()">
+
+  <div class="flex flex-column gap-5">
+
+    <div class="flex flex-column gap-2" *ngFor="let field of formConfig, let i = index">
+
+      <label [for]="field.name"> {{ field.label }}</label>
+
+      <ng-container [ngSwitch]="field.type">
+
+        <!-- <app-main-input [id]="field.name" [_formControlName]="field.name" [parentForm]="mainForm"
+          [placeholder]="field.placeholder" *ngSwitchCase="'text'">
+        </app-main-input> -->
+
+        <input type="text" pInputText [id]="field.name" [formControlName]="field.name"
+        [placeholder]="field.placeholder" *ngSwitchCase="'text'">
+
+        <p-inputNumber class="w-full" inputId="integeronly" [id]="field.name" [formControlName]="field.name"
+        [placeholder]="field.placeholder" *ngSwitchCase="'number'"></p-inputNumber>
+
+        <!-- <app-main-input [id]="field.name" [_formControlName]="field.name" [parentForm]="mainForm"
+          [placeholder]="field.placeholder" *ngSwitchCase="'number'">
+        </app-main-input> -->
+
+        <p-inputSwitch [formControlName]="field.name" *ngSwitchCase="'switch'">
+        </p-inputSwitch>
+
+        <div class="flex flex-column gap-2 md:flex-row md:gap-5" *ngSwitchCase="'radio'">
+          <div *ngFor="let radio of field.roles">
+
+            <p-radioButton [name]="field.name" [value]="radio" [inputId]="radio"
+              [formControlName]="field.name"></p-radioButton>
+            <label [for]="radio" class="ml-2"> {{ radio | capitalizeWords }}</label>
+
+          </div>
+        </div>
+
+      </ng-container>
+
+    </div>
+
+    <p-button type="submit" label="Add categorie" class="flex justify-content-end">
+    </p-button>
+
+  </div>
+
+</form>

@@ -1,0 +1,53 @@
+<p-card class="" [subheader]="">
+
+  <ng-template pTemplate="header">
+
+    <div>
+
+      <!-- <img alt="Card" [src]="categoria?.imageUrl" (load)="imageischanged()" /> -->
+      <img alt="Card" *ngIf="categoria" [src]="categoria.imageUrl" (load)="imageischanged()" height="350" width="300" />
+
+    </div>
+
+    <p-skeleton *ngIf="loader" height="350px"></p-skeleton>
+
+
+  </ng-template>
+
+  <p-skeleton *ngIf="loader" height=".5rem"></p-skeleton>
+  <p *ngIf="categoria">Hola mundo</p>
+
+  <ng-template pTemplate="footer">
+
+    <div class="flex gap-3">
+
+      <p-button *ngIf="categoria" label="Edit" severity="secondary" class="w-full" styleClass="w-full" />
+
+      <p-button *ngIf="categoria" label="Delete" severity="danger" class="w-full" styleClass="w-full" />
+
+      <p-skeleton *ngIf="loader" width="4rem" height="2rem"></p-skeleton>
+
+      <p-skeleton *ngIf="loader" width="4rem" height="2rem"></p-skeleton>
+
+    </div>
+
+  </ng-template>
+
+</p-card>
+
+
+
+
+
+<!-- <p-card *ngIf="loader">
+  <ng-template pTemplate="header">
+    <p-skeleton height="300px"></p-skeleton>
+  </ng-template>
+  <p-skeleton height=".5rem"></p-skeleton>
+  <ng-template pTemplate="footer">
+    <div class="flex gap-3">
+      <p-skeleton width="4rem" height="2rem"></p-skeleton>
+      <p-skeleton width="4rem" height="2rem"></p-skeleton>
+    </div>
+  </ng-template>
+</p-card> -->

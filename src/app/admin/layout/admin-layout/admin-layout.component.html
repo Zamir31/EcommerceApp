@@ -1,0 +1,33 @@
+<nav class="container">
+
+  <div class="grid md:justify-content-center xl:justify-content-start md:gap-5  mt-2 md:mt-0 ">
+
+    <div class="col md:col-fixed ">
+
+      <div class="grid justify-content-between md:flex-column md:mt-2 md:gap-5">
+
+        <div class=" md:flex-order-1 ">
+          <button *ngIf="screenWidth < 768" #btn type="button" class=" border-0 " pButton icon="pi pi-bars" label="Menu"
+            (click)="menu.toggle($event)"></button>
+          <p-tieredMenu class="border-none" #menu [model]="items" [popup]="showMenu"></p-tieredMenu>
+
+        </div>
+
+
+        <div class=" md:flex-order-0 ">
+          <h2 class="m-0 ">LOGO</h2>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="div_routerOutlet col-12 md:col-8 lg:col-9 xl:col-9">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+
+</nav>
